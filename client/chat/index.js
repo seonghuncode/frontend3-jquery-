@@ -13,6 +13,7 @@ function getChatData() {
   $.ajax({
     url: "http://localhost:3000/getMessage",
     success: ({ data }) => {
+      //data에는 DB에 쌓여 있는 chat들이 있다
       let html = "";
 
       data.forEach(({ id, email, message }, index) => {
@@ -25,6 +26,7 @@ function getChatData() {
     },
   });
 }
+//기존 데이터에 쌓여 있는 정보를 가지고 온다
 
 /**
  *
