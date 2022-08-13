@@ -1,0 +1,94 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+span,
+p {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 14px;
+  cursor: pointer;
+}
+
+section {
+  width: 50%;
+  margin: 25px auto;
+}
+
+.h1-text {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  position: relative;
+}
+
+.form-box > input {
+  border: 1px solid #d9d9d9;
+  padding: 7px 11px;
+  margin-top: 12px;
+  outline: none;
+  color: rgba(0, 0, 0, 0.65);
+  transition: all.3s;
+  border-radius: 3px;
+  font-size: 11px;
+}
+
+.form-box > span {
+  font-size: 11px;
+}
+
+.btn-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.btn-box > button {
+  margin-top: 12px;
+  padding: 4px;
+}
+
+.warning {
+  position: absolute;
+  right: 7px;
+  font-size: 7px;
+  color: red;
+  top: 33px;
+}
+
+.warning-input {
+  border-color: red !important;
+}
+
+.error-text {
+  color: red;
+  font-size: 6px;
+  margin-top: 6px;
+}

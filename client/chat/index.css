@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.chat {
+  width: 300px;
+  height: 500px;
+  overflow: scroll;
+
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  position: relative;
+  /* 아래서 상자 밖을 벗어나지 못 하도록 */
+}
+
+.message-input {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+}
+
+.message-input > input {
+  width: 80%;
+}
+
+.message-input > button {
+  width: 20%;
+}
+
+.message {
+  margin-top: 6px;
+}
+.message-box {
+  padding: 16px;
+  overflow: scroll;
+}
